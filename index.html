@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegance Wear - متجر الألبسة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ECF0F1; /* اللون الخلفي */
+            color: #2C3E50; /* لون النص */
+        }
+
+        header {
+            background-color: #2C3E50; /* الأزرق الداكن */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* شريط الاتصال */
+        .contact-bar {
+            background-color: #F39C12;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .contact-bar a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-bar a:hover {
+            text-decoration: underline;
+        }
+
+        .banner {
+            background-image: url('https://media-bcn1-1.cdn.whatsapp.net/v/t61.24694-24/436110087_1501121823856806_5565345534191371561_n.jpg?ccb=11-4&oh=01_Q5AaIKW0E12ChQCKTgiT5Ym5DLLgN8xBBfNQCIHntQsOqK9M&oe=66F0F677&_nc_sid=5e03e0&_nc_cat=103');
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: #F39C12; /* الذهبي */
+        }
+
+        .banner h2 {
+            padding-top: 100px;
+            font-size: 48px;
+            margin: 0;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 30%;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            border: 1px solid #F39C12; /* اللون الذهبي عند التحويم */
+        }
+
+        .product img {
+            width: 100%;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+            color: #2C3E50; /* لون النص */
+        }
+
+        .product p {
+            color: #777;
+        }
+
+        .product button {
+            background-color: #F39C12; /* الذهبي */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 15px;
+            transition: background-color 0.3s;
+        }
+
+        .product button:hover {
+            background-color: #D68910; /* تدرج أغمق للون الذهبي عند التحويم */
+        }
+
+        footer {
+            background-color: #2C3E50; /* الأزرق الداكن */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #F39C12; /* اللون الذهبي */
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* تصميم متجاوب */
+        @media (max-width: 768px) {
+            .product {
+                width: 45%;
+            }
+
+            .banner h2 {
+                font-size: 36px;
+                padding-top: 80px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product {
+                width: 100%;
+            }
+
+            .banner h2 {
+                font-size: 24px;
+                padding-top: 50px;
+            }
+        }
+
+        /* تحسينات للهواتف */
+        @media (max-width: 360px) {
+            header h1 {
+                font-size: 20px;
+            }
+
+            .banner {
+                height: 200px;
+            }
+
+            .banner h2 {
+                font-size: 20px;
+                padding-top: 50px;
+            }
+
+            .product h3 {
+                font-size: 16px;
+            }
+
+            .product p {
+                font-size: 14px;
+            }
+
+            .product button {
+                padding: 8px 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- شريط الاتصال في الأعلى -->
+<div class="contact-bar" style="direction: rtl;">
+    <span>اتصل بنا: </span>
+    <a href="tel:+213676626102">213676626102+</a> | 
+    <a href="https://wa.me/213676626102" target="_blank">واتساب</a> | 
+    <a href="https://www.facebook.com/yourpage" target="_blank">فيسبوك</a>
+</div>
+
+
+<header>
+    <h1>Elegance Wear - متجر الأناقة</h1>
+</header>
+
+<div class="banner">
+    <h2>اكتشف أحدث صيحات الموضة</h2>
+</div>
+
+<section class="products">
+    <div class="product">
+        <img src="https://i.imgur.com/lEPKni9.jpeg" alt="منتج 1">
+        <h3>البسة الراحة</h3>
+        <p>سعر: 2500 دج</p>
+        <button>شراء الآن</button>
+    </div>
+
+    <div class="product">
+        <img src="https://i.imgur.com/VFPqxgJ.jpeg" alt="منتج 2">
+        <h3>فستان أنيق</h3>
+        <p>سعر: 4500 دج</p>
+        <button>شراء الآن</button>
+    </div>
+
+    <div class="product">
+        <img src="https://i.imgur.com/lQ1hh17.jpeg" alt="منتج 3">
+        <h3>فستان الجودة</h3>
+        <p>سعر: 3000 دج</p>
+        <button>شراء الآن</button>
+    </div>
+
+    <div class="product">
+        <img src="https://i.imgur.com/Aptr6Li.jpeg" alt="منتج 4">
+        <h3>البسة الراحة</h3>
+        <p>سعر: 2500 دج</p>
+        <button>شراء الآن</button>
+    </div>
+
+    <div class="product">
+        <img src="https://i.imgur.com/4ZwyRTw.jpeg" alt="منتج 5">
+        <h3>فستان أنيق</h3>
+        <p>سعر: 4500 دج</p>
+        <button>شراء الآن</button>
+    </div>
+
+    <div class="product">
+        <img src="https://i.imgur.com/Aptr6Li.jpeg" alt="منتج 6">
+        <h3>فستان الجودة</h3>
+        <p>سعر: 3000 دج</p>
+        <button>شراء الآن</button>
+    </div>
+</section>
+
+<!-- معلومات الاتصال في أسفل الصفحة -->
+<footer>
+    <p>تواصل معنا:</p>
+    <a href="tel:+213676626102">+213 676 62 61 02</a> | 
+    <a href="https://wa.me/213123456789" target="_blank">واتساب</a> | 
+    <a href="https://www.facebook.com/yourpage" target="_blank">فيسبوك</a>
+    <p>&copy; 2024 Elegance Wear - جميع الحقوق محفوظة</p>
+</footer>
+
+</body>
+</html>
