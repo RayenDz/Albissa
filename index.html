@@ -13,6 +13,33 @@
             color: #2C3E50; /* لون النص */
         }
 
+        /* شريط النص المتحرك */
+        .promo-bar {
+            background-color: #F39C12; /* اللون الذهبي */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 20px;
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .promo-bar span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: moveText 20s linear infinite; /* زيادة الوقت لجعل الحركة أبطأ */
+        }
+
+        @keyframes moveText {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
         header {
             background-color: #2C3E50; /* الأزرق الداكن */
             color: #fff;
@@ -31,6 +58,7 @@
             color: #fff;
             padding: 10px;
             text-align: center;
+            direction: rtl;
         }
 
         .contact-bar a {
@@ -184,14 +212,18 @@
 </head>
 <body>
 
+<!-- شريط النص المتحرك في الأعلى -->
+<div class="promo-bar">
+    <span>🎉 تسوق الآن واحصل على خصومات تصل إلى 50%! 🌟 أحدث صيحات الموضة بانتظارك! 🚀</span>
+</div>
+
 <!-- شريط الاتصال في الأعلى -->
 <div class="contact-bar" style="direction: rtl;">
     <span>اتصل بنا: </span>
     <a href="tel:+213676626102">213676626102+</a> | 
     <a href="https://wa.me/213676626102" target="_blank">واتساب</a> | 
-    <a href="https://www.facebook.com/yourpage" target="_blank">فيسبوك</a>
+    <a href="https://www.facebook.com/groups/BtcMarketing" target="_blank">فيسبوك</a>
 </div>
-
 
 <header>
     <h1>Elegance Wear - متجر الأناقة</h1>
@@ -250,9 +282,27 @@
     <p>تواصل معنا:</p>
     <a href="tel:+213676626102">+213 676 62 61 02</a> | 
     <a href="https://wa.me/213123456789" target="_blank">واتساب</a> | 
-    <a href="https://www.facebook.com/yourpage" target="_blank">فيسبوك</a>
+    <a href="https://www.facebook.com/groups/BtcMarketing" target="_blank">فيسبوك</a>
     <p>&copy; 2024 Elegance Wear - جميع الحقوق محفوظة</p>
 </footer>
+<script>
+    // تعطيل النقر بزر الماوس الأيمن
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
 
+    // تعطيل التحديد
+    document.onselectstart = function () {
+        return false;
+    };
+
+    // تعطيل اختصارات لوحة المفاتيح مثل Ctrl+C
+    document.addEventListener('keydown', function(e) {
+        if (e.ctrlKey && (e.key === 'c' || e.key === 'C')) {
+            e.preventDefault();
+        }
+    });
+
+</script>
 </body>
 </html>
